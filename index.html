@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asilbek's Todo List</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        Todo List of <input class="myName" type="text" placeholder="name" />
+      </h1>
+    </header>
+    <form action="">
+      <input type="text" class="todo-input" />
+      <button class="todo-button" type="submit">+</button>
+      <div class="select">
+        <select name="todos" id="filter-todo">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="uncompleted">Uncompleted</option>
+        </select>
+      </div>
+    </form>
+    <div class="todo-container">
+      <ul class="todo-list"></ul>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
